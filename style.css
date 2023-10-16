@@ -9,3 +9,13 @@ body {
     overflow: hidden;
 }
 
+#timer {
+    font-size: 7rem;
+    font-weight: 700;
+    text-shadow: 2px 2px #f8a5c2;
+    color: #f92672;
+    width: 600px;
+    text-align: center;
+    margin: 40px auto;
+}
+
