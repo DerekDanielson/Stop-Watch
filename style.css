@@ -12,7 +12,7 @@ body {
 #timer {
     font-size: 7rem;
     font-weight: 700;
-    text-shadow: 2px 2px #9b9698;
+    text-shadow: 2px 2px #04fd10;
     color: #4b4547;
     width: 600px;
     text-align: center;
@@ -25,7 +25,7 @@ body {
 }
 
 button {
-    background-color: #f92672;
+    background-color: #04fd10;
     color: white;
     border: none;
     font-size: 2rem;
