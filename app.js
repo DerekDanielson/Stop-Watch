@@ -23,7 +23,12 @@ function startTimer(){
 
 function formatTime(elapsedTime){
     const milliseconds = Math.floor((elapsedTime % 1000) / 10);
-        return milliseconds > 9 ? milliseconds : '0' + milliseconds;
+    const seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+
+        return (
+            (seconds ? (seconds > 9 ? seconds : '0' + seconds) : '00')
+            + '.' +
+            (milliseconds > 9 ? milliseconds : '0' + milliseconds));
 };
 
 function stopTimer(){
