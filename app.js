@@ -19,6 +19,9 @@ function startTimer(){
         elapsedTime = Date.now() - startTime;
         timerEl.textContent = formatTime(elapsedTime);
     }, 10);
+
+    startEl.disabled = true;
+    stopEl.disabled = false;
 };
 
 function formatTime(elapsedTime){
