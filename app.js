@@ -40,7 +40,9 @@ function formatTime(elapsedTime){
 };
 
 function stopTimer(){
-    console.log('stop');
+    clearInterval(timeInterval);
+    startEl.disabled = false;
+    stopEl.disabled = true;
 };
 
 function resetTimer(){
