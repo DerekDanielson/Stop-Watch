@@ -7,11 +7,12 @@ let startTime = 0;
 let elapsedTime = 0;
 let timeInterval;
 
-
+// Add event lisenters for start, stop and reset buttons
 startEl.addEventListener('click', startTimer);
 stopEl.addEventListener('click', stopTimer);
 resetEl.addEventListener('click', resetTimer);
 
+// Start timer
 function startTimer(){
     startTime = Date.now() - elapsedTime;
 
@@ -24,6 +25,7 @@ function startTimer(){
     stopEl.disabled = false;
 };
 
+// Format time
 function formatTime(elapsedTime){
     const milliseconds = Math.floor((elapsedTime % 1000) / 10);
     const seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
@@ -40,12 +42,14 @@ function formatTime(elapsedTime){
             );
 };
 
+// Stop timer
 function stopTimer(){
     clearInterval(timeInterval);
     startEl.disabled = false;
     stopEl.disabled = true;
 };
 
+// Reset the timer
 function resetTimer(){
     clearInterval(timeInterval);
     elapsedTime = 0;
