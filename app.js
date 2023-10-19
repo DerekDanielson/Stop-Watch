@@ -3,10 +3,10 @@ const startEl = document.getElementById('start');
 const stopEl = document.getElementById('stop');
 const resetEl = document.getElementById('reset');
 
-
 let startTime = 0;
 let elapsedTime = 0;
 let timeInterval;
+
 
 startEl.addEventListener('click', startTimer);
 stopEl.addEventListener('click', stopTimer);
@@ -36,7 +36,8 @@ function formatTime(elapsedTime){
             + ':' +
             (seconds ? (seconds > 9 ? seconds : '0' + seconds) : '00')
             + '.' +
-            (milliseconds > 9 ? milliseconds : '0' + milliseconds));
+            (milliseconds > 9 ? milliseconds : '0' + milliseconds)
+            );
 };
 
 function stopTimer(){
