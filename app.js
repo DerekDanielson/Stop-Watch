@@ -39,7 +39,7 @@ function formatTime(elapsedTime){
             (seconds ? (seconds > 9 ? seconds : '0' + seconds) : '00')
             + '.' +
             (milliseconds > 9 ? milliseconds : '0' + milliseconds)
-            );
+        );
 };
 
 // Stop timer
