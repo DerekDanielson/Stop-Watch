@@ -53,7 +53,7 @@ function stopTimer(){
 function resetTimer(){
     clearInterval(timeInterval);
     elapsedTime = 0;
-    timerEl.textContent = '00:00:00.00';
+    timerEl.textContent = '00:00:00';
     startEl.disabled = false;
     stopEl.disabled = false;
 };
